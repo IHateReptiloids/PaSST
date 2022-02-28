@@ -1,5 +1,6 @@
 # Project
 data/audioset/val/
+data/ssp
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
