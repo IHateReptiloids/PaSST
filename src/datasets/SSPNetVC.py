@@ -17,7 +17,7 @@ class SSPNetVC(torch.utils.data.Dataset):
         if csv is None:
             csv = self.root / 'labels.csv'
         if not self.root.exists() or not csv.exists():
-            self.download()
+            self.download(self.root)
 
         self.sr = sr
         self.csv = pd.read_csv(csv)
