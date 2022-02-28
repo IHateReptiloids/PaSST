@@ -56,7 +56,7 @@ class SSPNetVC(torch.utils.data.Dataset):
                 filler = ('filler' in fields)
                 assert laughter or filler
                 if laughter and filler:
-                    label = 'Filler,Laughter'
+                    label = 'Filler|Laughter'
                 elif laughter:
                     label = 'Laughter'
                 else:
